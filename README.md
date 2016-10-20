@@ -43,25 +43,32 @@ const comment = {
 }
 ```
 
+The actions for the state container are:
+
+```javascript
+const POST
+const COMMENT
+```
+
 ## Stacks
 
 Go to each one of the following folders to check the implementations
 
-- [snabbdom + hyperx + sheetify + riotux + router5](/shshrir5)
-- [snabbdom + hyperx + sheetify + riotux + director](/shshrid)
-- [snabbdom + hyperx + sheetify + redux + router5](/shshrer5)
-- [snabbdom + hyperx + sheetify + redux + director](/shshred)
-- [snabbdom + hyperx + cxs + riotux + router5](/shcrir5)
-- [snabbdom + hyperx + cxs + riotux + director](/shcrid)
-- [snabbdom + hyperx + cxs + redux + router5](/shcrer5)
-- [snabbdom + hyperx + cxs + redux + director](/shcred)
-- [hyperscript + hyperx + sheetify + riotux + router5](/hhshrir5)
-- [hyperscript + hyperx + sheetify + riotux + director](/hhshrid)
-- [hyperscript + hyperx + sheetify + redux + router5](/hhshrer5)
+- [yo-yo + sheetify + send-action + sheet-router](/yoshsasr)
+- [yo-yo + sheetify + send-action + director](/yoshsad)
+- [yo-yo + sheetify + redux + sheet-router](/yoshresr)
+- [yo-yo + sheetify + redux + director](/yoshred)
+- [yo-yo + cxs + send-action + sheet-router](/yocsasr)
+- [yo-yo + cxs + send-action + director](/yocsad)
+- [yo-yo + cxs + redux + sheet-router](/yocresr)
+- [yo-yo + cxs + redux + director](/yocred)
+- [hyperscript + hyperx + sheetify + send-action + sheet-router](/hhshsasr)
+- [hyperscript + hyperx + sheetify + send-action + director](/hhshsad)
+- [hyperscript + hyperx + sheetify + redux + sheet-router](/hhshresr)
 - [hyperscript + hyperx + sheetify + redux + director](/hhshred)
-- [hyperscript + hyperx + cxs + riotux + router5](/hhcrir5)
-- [hyperscript + hyperx + cxs + riotux + director](/hhcrid)
-- [hyperscript + hyperx + cxs + redux + router5](/hhcrer5)
+- [hyperscript + hyperx + cxs + send-action + sheet-router](/hhcsasr)
+- [hyperscript + hyperx + cxs + send-action + director](/hhcsad)
+- [hyperscript + hyperx + cxs + redux + sheet-router](/hhcresr)
 - [hyperscript + hyperx + cxs + redux + director](/hhcred)
 
 ## License
