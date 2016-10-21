@@ -3,6 +3,7 @@ export const posts = [
     title: 'post 1',
     date: new Date(),
     content: 'lorem ipsum...',
+    excerpt: 'lorem ipsum...',
     author: 'Yerko',
     comments: []    
   },
@@ -10,6 +11,7 @@ export const posts = [
     title: 'post 2',
     date: new Date(),
     content: 'lorem ipsum...',
+    excerpt: 'lorem ipsum...',
     author: 'Yerko',
     comments: [
       {
