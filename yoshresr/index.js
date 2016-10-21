@@ -7,16 +7,19 @@ import href from 'sheet-router/href'
 // default to `/404` if no path matches
 const router = sheetRouter({ default: '/404' }, [
   [ '/posts', postComponent,
-    '/posts/:post', postComponent,
-    ['/comments', commentComponent,
-     '/comments/:comment', commentComponent]
+    ['/:post', postComponent,
+      ['/comments', commentComponent,
+        ['/:comment', commentComponent]
+      ]
+    ]
   ],
-  ['/404', (params) => html`<div>Oh no, path not found!</div>`],
+  ['/404', (params) => html`<div>Oh no, path not found! ${JSON.stringify(params, null, 2)}</div>`],
 ])
 
 href(href => {
-  html.update(postComponent, router(href.pathname))
+  root = html.update(root, router(href.pathname))
   console.log('link was clicked: ' + href.pathname)
 })
 
-document.body.appendChild(router('/posts'))
+const root = router('/posts')
+document.querySelector('#app').appendChild(root)
