@@ -20,10 +20,10 @@ const router = sheetRouter({ default: '/404' }, [
   ['/404', (params) => html`<div>Oh no, path not found! ${JSON.stringify(params, null, 2)}</div>`],
 ])
 
-href(href => {
+/* href(href => {
   root = html.update(root, router(href.pathname))
   console.log('link was clicked: ' + href.pathname)
-})
+}) */
 
 const root = router('/posts')
 document.querySelector('#app').appendChild(root)
