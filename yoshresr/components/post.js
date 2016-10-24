@@ -5,6 +5,7 @@ const renderPost = (post) => html`
   <article class="post">
     <h2><a href="/posts/${posts.indexOf(post)}" title="${ post.title }">${ post.title }</a></h2>
     <p>${ post.content }</p>
+    <a href="/posts/${posts.indexOf(post)}/comments" title="${ post.title } | comments">Comments »</a>
     <p class="small gray"><time datetime="${post.date}">${post.date.toLocaleString()}</time></p>
   </article>
 `

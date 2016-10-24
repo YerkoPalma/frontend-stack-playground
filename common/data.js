@@ -5,7 +5,28 @@ export const posts = [
     content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin facilisis enim vehicula est aliquam, blandit dignissim est ornare. Sed nec interdum erat. Nullam ultrices porta quam, quis laoreet dolor ultricies et. Aliquam porta nibh dolor, ac venenatis ligula placerat fringilla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor vitae ipsum at imperdiet. Sed pellentesque laoreet mi vel tincidunt. Nulla at ligula a tortor facilisis viverra rutrum eu mi. Nam sed mi lacus. Sed lorem mi, fringilla ornare egestas ut, posuere vitae nibh. Quisque in nisl eleifend augue posuere auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent nec leo bibendum, ultrices sem eu, hendrerit massa. Aliquam non ultricies tortor. Ut justo erat, ultrices sit amet ligula vitae, elementum venenatis mi.',
     excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum viverra porta tellus, sed vestibulum ipsum.',
     author: 'Yerko',
-    comments: []    
+    comments: [
+      {
+        author: 'Salvador',
+        content: 'Really nice post!',
+        date: new Date()
+      },
+      {
+        author: 'Yerko',
+        content: 'The best lorem ipsum I\'ve ever seen',
+        date: new Date()
+      },
+      {
+        author: 'Salvador',
+        content: 'Some long comment. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices turpis vitae placerat tristique. Fusce eget blandit nunc. Nam non justo neque. Etiam bibendum viverra porta.',
+        date: new Date()
+      },
+      {
+        author: 'Anonymus',
+        content: 'Not so great actually',
+        date: new Date()
+      }
+    ]
   },
   {
     title: 'One more for the collection',
@@ -17,12 +38,6 @@ Fusce ut sapien id nibh ornare pellentesque. Vestibulum tempus massa sollicitudi
 Fusce ut sapien id nibh ornare pellentesque. Vestibulum tempus massa sollicitudin ligula dapibus, non blandit arcu tincidunt. Nulla vel urna vel mi faucibus ultrices sit amet sed arcu. Duis augue risus, porttitor a aliquet quis, molestie sit amet dui. Aenean gravida, lorem non rutrum porttitor, magna ante laoreet ex, eu viverra est velit ultricies massa. Proin commodo sem et quam maximus egestas. In et vehicula est. Proin tempor turpis at libero rutrum, in varius lectus dictum. Duis ut tincidunt risus, eu mattis libero. Nullam a elit at ligula pretium dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam auctor suscipit lobortis. Etiam sit amet pulvinar turpis, in semper ex.`,
     excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum viverra porta tellus, sed vestibulum ipsum.',
     author: 'Yerko',
-    comments: [
-      {
-        author: 'Salvador',
-        content: 'foo bar...',
-        date: new Date()
-      }
-    ]
+    comments: []
   }
 ]

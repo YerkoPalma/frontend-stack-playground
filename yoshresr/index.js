@@ -2,7 +2,7 @@ import sheetRouter from 'sheet-router'
 import html from 'yo-yo'
 import postComponent from './components/post'
 import postsComponent from './components/posts'
-import commentComponent from './components/comment'
+import commentsComponent from './components/comments'
 import href from 'sheet-router/href'
 // import sheetify from 'sheetify'
 
@@ -12,9 +12,7 @@ import href from 'sheet-router/href'
 const router = sheetRouter({ default: '/404' }, [
   [ '/posts', postsComponent,
     ['/:post', postComponent,
-      ['/comments', commentComponent,
-        ['/:comment', commentComponent]
-      ]
+      ['/comments', commentsComponent]
     ]
   ],
   ['/404', (params) => html`<div>Oh no, path not found! ${JSON.stringify(params, null, 2)}</div>`],

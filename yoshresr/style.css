@@ -66,3 +66,26 @@ h1 a { color: #333;}
 .fr { float: right; }
 
 .gray { color: #999; }
+
+ul, .ul { list-style: none; }
+
+.commenter {
+  font-size: 1.35rem;
+  margin-bottom: 8px;
+}
+
+.comment-date {
+  font-size: .875rem;
+  color: rgba(0,0,0,.5);
+}
+
+.comments li {
+  border-bottom-style: solid; 
+  border-bottom-width: 1px;
+  border-color: rgba(0,0,0,.15);
+  margin-top: 32px;
+}
+
+.comment-content {
+  margin-bottom: 0;
+}
