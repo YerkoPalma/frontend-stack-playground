@@ -41,3 +41,8 @@ Fusce ut sapien id nibh ornare pellentesque. Vestibulum tempus massa sollicitudi
     comments: []
   }
 ]
+
+export default {
+  path: '/',
+  posts
+}

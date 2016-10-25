@@ -1,7 +1,7 @@
 import { posts } from '../../common/data.js'
 import html from 'yo-yo'
 
-export default () => html`
+export default (params, state) => html`
 <main class="posts">
   <a href="/new-post">Add post</a>
   ${posts.map(post => html`

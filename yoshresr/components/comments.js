@@ -15,7 +15,7 @@ const renderComments = (post) => html`
   </ul>
 `
 
-export default (params) => html`
+export default (params, state) => html`
 <main>
   <h2><a href="/posts/${params.post}" title="${ posts[params.post].title }">${ posts[params.post].title }</a></h2>
   ${

@@ -5,9 +5,15 @@ import postsComponent from './components/posts'
 import commentsComponent from './components/comments'
 import newPostComponent from './components/new-post'
 import href from 'sheet-router/href'
+import blogApp from './store/reducers'
+import { updatePath } from './store/actions'
+import initialState from '../common/data.js'
+import { createStore } from 'redux'
 // import sheetify from 'sheetify'
 
 // sheetify('style.css', { global: true })
+
+let store = createStore(blogApp, initialState)
 
 // default to `/404` if no path matches
 const router = sheetRouter({ default: '/404' }, [
@@ -20,9 +26,16 @@ const router = sheetRouter({ default: '/404' }, [
   ['/404', (params) => html`<div>Oh no, path not found! ${JSON.stringify(params, null, 2)}</div>`],
 ])
 
+function render () {
+  root = html.update(root, router(store.getState().path))
+}
+
+store.subscribe(render)
+
 href(href => {
+  store.dispatch(updatePath(href.pathname))
   root = html.update(root, router(href.pathname))
-  console.log('link was clicked: ' + href.pathname)
+  console.log('link was clicked: ' + href.pathname, ' path in state is ' + store.getState().path)
 })
 
 const root = router('/posts')

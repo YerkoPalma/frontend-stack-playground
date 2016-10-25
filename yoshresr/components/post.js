@@ -10,7 +10,7 @@ const renderPost = (post) => html`
   </article>
 `
 
-export default (params) => html`
+export default (params, state) => html`
 <main>
   ${
     renderPost(posts[params.post])
