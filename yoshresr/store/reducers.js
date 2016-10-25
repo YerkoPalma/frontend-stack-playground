@@ -5,6 +5,8 @@ const post = (state = {}, action) => {
     case 'ADD_POST':
       return {
         title: action.title,
+        content: action.content,
+        comments: [],
         date: new Date()
       }
     default:

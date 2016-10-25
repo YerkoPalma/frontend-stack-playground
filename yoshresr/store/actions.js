@@ -4,3 +4,11 @@ export const updatePath = (path) => {
     path
   }
 }
+
+export const addPost = (title, content) => {
+  return {
+    type: 'ADD_POST',
+    title,
+    content
+  }
+}

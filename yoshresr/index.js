@@ -27,16 +27,16 @@ const router = sheetRouter({ default: '/404' }, [
 ])
 
 function render () {
-  root = html.update(root, router(store.getState().path))
+  root = html.update(root, router(store.getState().path, store.getState(), store.dispatch))
 }
 
 store.subscribe(render)
 
 href(href => {
   store.dispatch(updatePath(href.pathname))
-  root = html.update(root, router(href.pathname))
+  root = html.update(root, router(href.pathname, store.getState(), store.dispatch))
   console.log('link was clicked: ' + href.pathname, ' path in state is ' + store.getState().path)
 })
 
-const root = router('/posts')
+const root = router('/posts', store.getState(), store.dispatch)
 document.querySelector('#app').appendChild(root)

@@ -1,4 +1,3 @@
-import { posts } from '../../common/data.js'
 import html from 'yo-yo'
 
 const renderComments = (post) => html`
@@ -17,8 +16,8 @@ const renderComments = (post) => html`
 
 export default (params, state) => html`
 <main>
-  <h2><a href="/posts/${params.post}" title="${ posts[params.post].title }">${ posts[params.post].title }</a></h2>
+  <h2><a href="/posts/${params.post}" title="${ state.posts[params.post].title }">${ state.posts[params.post].title }</a></h2>
   ${
-    renderComments(posts[params.post])
+    renderComments(state.posts[params.post])
   }
 </main>`
