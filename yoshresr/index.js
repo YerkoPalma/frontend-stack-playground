@@ -15,7 +15,6 @@ import { createStore } from 'redux'
 
 let store = createStore(blogApp, initialState)
 
-// default to `/404` if no path matches
 const router = sheetRouter({ default: '/404' }, [
   ['/new-post', newPostComponent],
   [ '/posts', postsComponent,
@@ -26,17 +25,20 @@ const router = sheetRouter({ default: '/404' }, [
   ['/404', (params) => html`<div>Oh no, path not found! ${JSON.stringify(params, null, 2)}</div>`],
 ])
 
+// Render function used after every state change
+// used yo-yo update function to update the DOM
 function render () {
   root = html.update(root, router(store.getState().path, store.getState(), store.dispatch))
 }
 
 store.subscribe(render)
 
+// handle anchor links with sheet-router
 href(href => {
   store.dispatch(updatePath(href.pathname))
-  root = html.update(root, router(href.pathname, store.getState(), store.dispatch))
   console.log('link was clicked: ' + href.pathname, ' path in state is ' + store.getState().path)
 })
 
+// set initial root, and append it to the DOM
 const root = router('/posts', store.getState(), store.dispatch)
 document.querySelector('#app').appendChild(root)

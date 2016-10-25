@@ -7,7 +7,7 @@ export default (params, state, dispatch) => {
     const title = document.getElementById('post-title').value
     const content = document.getElementById('post-content').value
     dispatch(addPost(title, content))
-    // navigate through redux
+    // navigate through redux, changing the 'path' in state
     dispatch(updatePath('/posts'))
   }
 
