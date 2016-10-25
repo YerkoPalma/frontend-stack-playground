@@ -3,6 +3,7 @@ import html from 'yo-yo'
 import postComponent from './components/post'
 import postsComponent from './components/posts'
 import commentsComponent from './components/comments'
+import newPostComponent from './components/new-post'
 import href from 'sheet-router/href'
 // import sheetify from 'sheetify'
 
@@ -10,6 +11,7 @@ import href from 'sheet-router/href'
 
 // default to `/404` if no path matches
 const router = sheetRouter({ default: '/404' }, [
+  ['/new-post', newPostComponent],
   [ '/posts', postsComponent,
     ['/:post', postComponent,
       ['/comments', commentsComponent]

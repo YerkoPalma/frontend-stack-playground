@@ -89,3 +89,46 @@ ul, .ul { list-style: none; }
 .comment-content {
   margin-bottom: 0;
 }
+
+.new-post { 
+  padding: 2rem; 
+  padding-left: 0;
+}
+
+.new-post input[type="text"] {
+  padding: .5rem;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-style: solid;
+  border-width: 1px;
+  font: inherit;
+}
+
+.new-post textarea {
+  padding: .5rem;
+  width: 100%;
+  resize: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-style: solid;
+  border-width: 1px;
+  font: inherit;
+  margin-top: 1rem;
+  height: 10rem;
+  border-color: black;
+}
+
+.new-post input[type="submit"] {
+  font-size: .875rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-weight: 700;
+  border-color: #000;
+  cursor: pointer;
+}
