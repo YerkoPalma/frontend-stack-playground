@@ -3,7 +3,7 @@
 
 ## Why?
 
-I've got tired of js frameworks, so I will start to experiment with different js stacks. 
+I've got tired of js frameworks, so I will start to experiment with different js stacks.
 composing libraries is more fun than learning oppinionated frameworks. At the end, I would have the basic experience and maybe some benchmarking to make some decisions.
 
 ## How?
@@ -22,7 +22,6 @@ The routes are:
 /posts
 /posts/:post_id
 /posts/:post_id/comments
-/posts/:post_id/comments/:comment_id
 ```
 
 The model structures are:
@@ -46,8 +45,7 @@ const comment = {
 The actions for the state container are:
 
 ```javascript
-const POST
-const COMMENT
+const ADD_POST
 ```
 
 ## Stacks
