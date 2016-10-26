@@ -1,0 +1,24 @@
+{
+  "name": "yocred",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^13.1.1",
+    "budo": "^9.2.1",
+    "es2040": "^1.2.4",
+    "rollupify": "^0.3.5"
+  },
+  "dependencies": {
+    "cxs": "^1.0.1",
+    "director": "^1.2.8",
+    "redux": "^3.6.0",
+    "yo-yo": "^1.3.1"
+  }
+}
