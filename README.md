@@ -54,22 +54,8 @@ const COMMENT
 
 Go to each one of the following folders to check the implementations
 
-- [yo-yo + sheetify + send-action + sheet-router](/yoshsasr)
-- [yo-yo + sheetify + send-action + director](/yoshsad)
 - [yo-yo + sheetify + redux + sheet-router](/yoshresr)
-- [yo-yo + sheetify + redux + director](/yoshred)
-- [yo-yo + cxs + send-action + sheet-router](/yocsasr)
-- [yo-yo + cxs + send-action + director](/yocsad)
-- [yo-yo + cxs + redux + sheet-router](/yocresr)
-- [yo-yo + cxs + redux + director](/yocred)
-- [hyperscript + hyperx + sheetify + send-action + sheet-router](/hhshsasr)
-- [hyperscript + hyperx + sheetify + send-action + director](/hhshsad)
-- [hyperscript + hyperx + sheetify + redux + sheet-router](/hhshresr)
-- [hyperscript + hyperx + sheetify + redux + director](/hhshred)
-- [hyperscript + hyperx + cxs + send-action + sheet-router](/hhcsasr)
-- [hyperscript + hyperx + cxs + send-action + director](/hhcsad)
-- [hyperscript + hyperx + cxs + redux + sheet-router](/hhcresr)
-- [hyperscript + hyperx + cxs + redux + director](/hhcred)
+- [yo-yo + cxs + redux + router5](/yocrer5)
 
 ## License
 
