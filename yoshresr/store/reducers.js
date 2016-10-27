@@ -7,6 +7,7 @@ const post = (state = {}, action) => {
         title: action.title,
         content: action.content,
         comments: [],
+        excerpt: action.content.substring(0, 50),
         date: new Date()
       }
     default:

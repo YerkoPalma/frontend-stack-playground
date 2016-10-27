@@ -22,7 +22,7 @@ const router = sheetRouter({ default: '/404' }, [
       ['/comments', commentsComponent]
     ]
   ],
-  ['/404', (params) => html`<div>Oh no, path not found! ${JSON.stringify(params, null, 2)}</div>`],
+  ['/404', (params) => html`<div>Oh no, path not found! ${JSON.stringify(params, null, 2)}</div>`]
 ])
 
 // Render function used after every state change
@@ -40,5 +40,5 @@ href(href => {
 })
 
 // set initial root, and append it to the DOM
-const root = router('/posts', store.getState(), store.dispatch)
+let root = router('/posts', store.getState(), store.dispatch)
 document.querySelector('#app').appendChild(root)
